@@ -1,21 +1,113 @@
 <!DOCTYPE html>
-<html lang="ru">
+<link href="css/css.css" rel="stylesheet" />
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" >
+    <head >
+    <link href="Медиа/logo.jpg" rel="apple-touch-icon" type="image/x-icon" />
+    <title > ПРОЕКТ</title >
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js" > </script >
+    <script src="galleria/dist/galleria.min.js" > </script >
+    </head >
+    <body >
+    <!--
+    добавить: 1. меню-навес с прилипанием при пролистывании 2. блок фотографий со своими примерами
+    3. сформировать основные блоки сайта (название аппарата, блок цены, блок характеристик),
+    4. оформить переключение между блоком характеристик и блоками "Краткое описание" и "Доставка и установка"
+    5. сделать иконку (и решить, что там с фоном) 6. Сделать художественную обработку (красивые кнопки, бэкграунд)
+    7. Адаптировать сайт
+    -->
+    <header >
+    <div class="mobile" >
+    <div class="header_logo" >
+    <img src="Медиа/logo.jpg" alt="CUT SPB PRO" class="logo" />
+    </div >
+    <div class="header_text" >
+    <span class="header_comp"> Cut SPB Pro</span>
+    <br />
+    <span class="header_loz">Станки для гаража и бизнеса</span>
+    </div >
+    </div >
+    </header >
+    <div class="char">
+        <table>
+            <caption align="top" class="Name">ЧПУ 0003</caption>
+            <tr>
+                <td>Размеры <br /> Ш x Д x В, см</td>
+                <td>100 x 100 x 100</td>
+            </tr>
+            <tr>
+                <td>Режет</td>
+                <td>Пластик, ДСП, Металл</td>
+            </tr>
+            <tr>
+                <td>Тип станка</td>
+                <td>С подвижным порталом</td>
+            </tr>
+            <tr>
+                <td>Зона обработки плоскости ШxВxД, мм</td>
+                <td>750x1200x200</td>
+            </tr>
+            <tr>
+                <td>Режет</td>
+                <td>Пластик, ДСП, Металл</td>
+            </tr>
+        </table>
 
+    </div>
+    <div class="galleria" >
+    <img src="Медиа/Тест1.jpg" >
+    <img src="Медиа/Тест2.jpg" >
+    <img src="Медиа/Тест1.jpg" >
+    </div >
 
-<head>
+    <div class="picks">
 
-    <title>РЇРЅР°</title>
+        <div class="div_picks">
+            <img class="pick" src="Медиа/Коробка.png"
+                 alt="https://www.flaticon.com/ru/search?word=%D0%BA%D0%BE%D1%80%D0%BE%D0%B1%D0%BA%D0%B0&shape=outline" />
+            <div class="pick_text_left">
+                <span class="pick_text_Z">Компактность</span>
+                <span class="pick_text_T">в разобранном виде станок <br /> занимает один европаллет</span>
+            </div>
+        </div>
 
-</head>
+        <div class="div_picks">
+            <img class="pick" src="Медиа/Гаечный ключ.png"
+                 alt="https://www.freepik.com/?_gl=1*tblwd5*fp_ga*MTYzMTk0NjAzLjE2NzI1Njk4MDk.*fp_ga_1ZY8468CQB*MTY3MjU4MzE5MC40LjEuMTY3MjU4MzIyMC4zMC4wLjA.*test_ga*MTYzMTk0NjAzLjE2NzI1Njk4MDk.*test_ga_523JXC6VL7*MTY3MjU4MzE5MC40LjEuMTY3MjU4MzIyMC4zMC4wLjA." />
+            <div class="pick_text_left">
+                <span class="pick_text_Z">Быстрый монтаж</span>
+                <span class="pick_text_T">время сборки <br /> один рабочий день</span>
+            </div>
+        </div>
 
+        <div class="div_picks">
+            <div class="pick_text_right">
+                <span class="pick_text_Z">Экономичность</span>
+                <span class="pick_text_T">$ изготовления изделия <br /> = $ потраченной электроэнергии</span>
+            </div>
+            <img class="pick" src="Медиа/Монета.png"
+                 alt="https://www.freepik.com/?_gl=1*13eot7a*test_ga*MTYzMTk0NjAzLjE2NzI1Njk4MDk.*test_ga_523JXC6VL7*MTY3MjU4MzE5MC40LjEuMTY3MjU4Mzg2MS40MC4wLjA.*fp_ga*MTYzMTk0NjAzLjE2NzI1Njk4MDk.*fp_ga_1ZY8468CQB*MTY3MjU4MzE5MC40LjEuMTY3MjU4Mzg2MS40MC4wLjA." />
+        </div>
 
-<body>
+        <div class="div_picks">
+            <div class="pick_text_right">
+                <span class="pick_text_Z">Легкая сборка</span>
+                <span class="pick_text_T">для сборки не нужно <br /> специального образования</span>
+            </div>
+            <img class="pick" src="Медиа/Чертеж.png"
+                 alt="https://www.flaticon.com/ru/authors/eucalyp" />
+        </div>
 
-<h1>Р¦РёСЃС‚</h1>
+    </div>
 
-<script src="JS/1.js"></script>
+        <div class="Hr2">
+            <span>НАЗНАЧЕНИЕ</span>
+        </div>
 
-</body>
-
-
-</html>
+        <script>
+            (function () {
+                Galleria.loadTheme('galleria/dist/themes/classic/galleria.classic.min.js');
+                Galleria.run('.galleria');
+            }());
+        </script>
+    </body >
+</html >
